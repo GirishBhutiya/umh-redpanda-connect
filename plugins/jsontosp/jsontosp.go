@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/benthosdev/benthos/v4/public/bloblang"
+	"github.com/redpanda-data/benthos/v4/public/bloblang"
 )
 
 var JSONObjectSpec = bloblang.NewPluginSpec().

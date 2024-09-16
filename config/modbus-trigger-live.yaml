@@ -51,4 +51,3 @@ output:
           org: RCM
           bucket: modbus_subscription
           precision: ns
-      

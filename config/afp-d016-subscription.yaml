@@ -25,7 +25,6 @@ pipeline:
         let four = "%s%s='%s'".format("@", "Machine", meta("group"))
         let gmeta = "%s, %s, %s, %s".format($one,$two,$three,$four)
         meta spq = "exec " + meta("sqlSp")+ " " + jsontosp(meta("Message")) + $gmeta
-        root.query = "exec " + meta("sqlSp")+ " " + jsontosp(meta("Message")) + $gmeta
 
 output:
   broker:
@@ -38,11 +37,6 @@ output:
           user: "user1"
           password: "9jrKxe6u548LIKpl"
           client_id: "imp-trigger"
-      - sql_raw:
-          driver: "mssql" # No default (required)
-          dsn: "sqlserver://rcmmes:rcmmes384@10.0.0.18:1433?database=AFP_MES_DB"
-          query: ${!meta("spq")}
-          unsafe_dynamic_query: true
       - influxdb:
           endpoint: http://10.2.0.6:8086
           username: admin

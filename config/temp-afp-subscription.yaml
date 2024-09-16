@@ -1,0 +1,82 @@
+input:
+  opcua:
+    endpoint: opc.tcp://172.16.14.211:49380
+    nodeIDs:
+      - '{"7": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.mz_standard.svMZdigitalIN.MZ_MZFRE1","dataType": "bool","name": "shots","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"19": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.mz_standard.shot","dataType": "bool","name": "shots","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"29": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.Robot_Good_Part","dataType": "bool","name": "Robot_Good_Part","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"41": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.Robot_Good_Part","dataType": "bool","name": "Robot_Good_Part","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"48": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.Robot_Good_Parts","dataType": "bool","name": "Robot_Good_Parts","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"60": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.Robot_Good_Parts","dataType": "bool","name": "Robot_Good_Parts","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"134": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.Comm_Status_DI1","dataType": "float","name": "comm_status_DI1","logging_sql": "false","logging_influx": "false","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"135": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.Comm_Status_DI2","dataType": "float","name": "comm_status","logging_sql": "false","logging_influx": "false","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"136": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.Comm_Status_AI1","dataType": "float","name": "comm_status_AI1","logging_sql": "false","logging_influx": "false","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"137": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.Comm_Status_AI2","dataType": "float","name": "comm_status_AI2","logging_sql": "false","logging_influx": "false","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"138": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.Comm_Status_TC1","dataType": "float","name": "comm_status_TC1","logging_sql": "false","logging_influx": "false","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"139": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.Comm_Status_DO1","dataType": "float","name": "comm_status_DO1","logging_sql": "false","logging_influx": "false","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"140": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.Position_scaled","dataType": "float","name": "Position_scaled","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"141": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.Pressure_Scaled","dataType": "float","name": "Pressure_scaled","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"142": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.Temperature_scaled","dataType": "float","name": "emperature_scaled","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"143": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.Velocity_scaled","dataType": "float","name": "Velocity_scaled","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"144": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.SPC_SampleSize","dataType": "float","name": "SPC_SampleSize","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"145": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.DataReady_SPC_py","dataType": "float","name": "DataReady_SPC_py","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"146": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.Scrap_Shots_pending","dataType": "float","name": "Scrap_Shots_pending","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"147": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.Scrap_Output","dataType": "float","name": "Scrap_Output","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"148": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.StartupScrapTimer1","dataType": "float","name": "StartupScrapTimer1","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"149": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.StartupScrapTimer2","dataType": "float","name": "StartupScrapTimer2","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"150": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.StartupScrapTimer3","dataType": "float","name": "StartupScrapTimer3","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"151": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.StartupScrapTimer3","dataType": "float","name": "StartupScrapTimer3","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"152": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.CycleTime_Counter","dataType": "float","name": "CycleTime_Counter","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"343": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.Comm_Status_DI1","dataType": "float","name": "comm_status_DI1","logging_sql": "false","logging_influx": "false","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"344": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.Comm_Status_DI2","dataType": "float","name": "comm_status","logging_sql": "false","logging_influx": "false","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"345": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.Comm_Status_AI1","dataType": "float","name": "comm_status_AI1","logging_sql": "false","logging_influx": "false","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"346": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.Comm_Status_AI2","dataType": "float","name": "comm_status_AI2","logging_sql": "false","logging_influx": "false","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"347": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.Comm_Status_TC1","dataType": "float","name": "comm_status_TC1","logging_sql": "false","logging_influx": "false","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"348": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.Comm_Status_DO1","dataType": "float","name": "comm_status_DO1","logging_sql": "false","logging_influx": "false","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"349": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.Position_scaled","dataType": "float","name": "Position_scaled","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"350": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.Pressure_Scaled","dataType": "float","name": "Pressure_scaled","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"351": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.Temperature_scaled","dataType": "float","name": "emperature_scaled","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"352": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.Velocity_scaled","dataType": "float","name": "Velocity_scaled","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"353": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.SPC_SampleSize","dataType": "float","name": "SPC_SampleSize","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"354": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.DataReady_SPC_py","dataType": "float","name": "DataReady_SPC_py","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"355": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.Scrap_Shots_pending","dataType": "float","name": "Scrap_Shots_pending","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"356": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.Scrap_Output","dataType": "float","name": "Scrap_Output","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"357": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.StartupScrapTimer1","dataType": "float","name": "StartupScrapTimer1","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"358": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.StartupScrapTimer2","dataType": "float","name": "StartupScrapTimer2","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"359": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.StartupScrapTimer3","dataType": "float","name": "StartupScrapTimer3","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"360": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.StartupScrapTimer3","dataType": "float","name": "StartupScrapTimer3","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"361": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.CycleTime_Counter","dataType": "float","name": "CycleTime_Counter","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"419": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.re_regler.svREactions.plunger","dataType": "float","name": "shots","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"420": [{"node": "ns=2;s=Buhler-OPC.D021.APPL.re_regler.svREactions.plunger1","dataType": "float","name": "shots","logging_sql": "false","logging_influx": "true","group": "D021", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"421": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.re_regler.svREactions.plunger","dataType": "float","name": "shots","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"422": [{"node": "ns=2;s=Buhler-OPC-DA.D007.SVs.re_regler.svREactions.plunger1","dataType": "float","name": "shots","logging_sql": "false","logging_influx": "true","group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+    subscribeEnabled: true
+    insecure: true
+pipeline:
+  processors:
+    - bloblang: |
+        root = meta("Message").parse_json()
+        root.timestamp_ms = (timestamp_unix_nano() / 1000000).floor()
+        root.group = meta("group")
+        root.db = meta("db")
+        root.historian = meta("historian")
+        root.sqlSp = meta("sqlSp")
+output:
+  broker:
+    pattern: fan_out
+    outputs:
+      - mqtt:
+          urls:
+            - tcp://10.0.0.56:1883
+          topic: UMH/V1/AFP/DCM/${! meta("group") }/subscription/${! meta("opcua_path") }
+          user: "user1"
+          password: "9jrKxe6u548LIKpl"
+          client_id: "afp-subscription"
+      - influxdb:
+          endpoint: http://10.2.0.6:8086
+          username: admin
+          password: admin123
+          token: BSNnByRccLkjEULGg1aA78tO0uGgwk2uJLz6EUlw1qh5uIFG9jmkDV8dW6tPQQExiVIITNDlpywJ8HoWEgLbuQ==
+          org: RCM
+          bucket: UMH_V1_AFP_DCM_subscription
+          precision: ns

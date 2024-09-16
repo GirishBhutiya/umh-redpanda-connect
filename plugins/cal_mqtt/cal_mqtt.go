@@ -7,8 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/benthosdev/benthos/v4/public/service"
 	mqtt "github.com/eclipse/paho.mqtt.golang"
+	"github.com/redpanda-data/benthos/v4/public/service"
 )
 
 type mqttReader struct {

@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/benthosdev/benthos/v4/public/service"
 	"github.com/goburrow/modbus"
+	"github.com/redpanda-data/benthos/v4/public/service"
 )
 
 var (

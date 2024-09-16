@@ -17,16 +17,16 @@ package main
 import (
 	"context"
 
-	_ "github.com/benthosdev/benthos/v4/public/components/all"
-	"github.com/benthosdev/benthos/v4/public/service"
-	_ "github.com/united-manufacturing-hub/benthos-umh/v2/plugins/ab_plugin"
-	_ "github.com/united-manufacturing-hub/benthos-umh/v2/plugins/cal_mqtt"
-	_ "github.com/united-manufacturing-hub/benthos-umh/v2/plugins/csv_plugin"
-	_ "github.com/united-manufacturing-hub/benthos-umh/v2/plugins/influxdb"
-	_ "github.com/united-manufacturing-hub/benthos-umh/v2/plugins/jsontosp"
-	_ "github.com/united-manufacturing-hub/benthos-umh/v2/plugins/modbus_plugin"
-	_ "github.com/united-manufacturing-hub/benthos-umh/v2/plugins/opcua_plugin"
-	_ "github.com/united-manufacturing-hub/benthos-umh/v2/plugins/s7comm_plugin"
+	_ "github.com/GirishBhutiya/umh-redpanda-connect/plugins/ab_plugin"
+	_ "github.com/GirishBhutiya/umh-redpanda-connect/plugins/cal_mqtt"
+	_ "github.com/GirishBhutiya/umh-redpanda-connect/plugins/csv_plugin"
+	_ "github.com/GirishBhutiya/umh-redpanda-connect/plugins/influxdb"
+	_ "github.com/GirishBhutiya/umh-redpanda-connect/plugins/jsontosp"
+	_ "github.com/GirishBhutiya/umh-redpanda-connect/plugins/modbus_plugin"
+	_ "github.com/GirishBhutiya/umh-redpanda-connect/plugins/opcua_plugin"
+	_ "github.com/GirishBhutiya/umh-redpanda-connect/plugins/s7comm_plugin"
+	"github.com/redpanda-data/benthos/v4/public/service"
+	_ "github.com/redpanda-data/connect/v4/public/components/all"
 )
 
 func main() {

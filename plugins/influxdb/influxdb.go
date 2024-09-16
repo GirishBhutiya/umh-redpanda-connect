@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/benthosdev/benthos/v4/public/service"
 	influxdb2 "github.com/influxdata/influxdb-client-go"
+	"github.com/redpanda-data/benthos/v4/public/service"
 )
 
 // InfluxDBOutput represents the configuration for the InfluxDB output plugin.

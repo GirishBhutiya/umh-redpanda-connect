@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/benthosdev/benthos/v4/public/service"
 	"github.com/jlaffaye/ftp"
+	"github.com/redpanda-data/benthos/v4/public/service"
 )
 
 type CSVOutput struct {

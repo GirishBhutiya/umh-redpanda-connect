@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/benthosdev/benthos/v4/public/service"
+	"github.com/redpanda-data/benthos/v4/public/service"
 	"github.com/robinson/gos7" // gos7 is a Go client library for interacting with Siemens S7 PLCs.
 )
 

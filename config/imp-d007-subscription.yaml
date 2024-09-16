@@ -1,0 +1,37 @@
+input:
+  opcua:
+    endpoint: opc.tcp://172.18.14.211:49380
+    nodeIDs:
+      - '{"1": [{"node": "ns=2;s=TwinCat.DC1.D007.Robot_good_part", "dataType": "float", "name": "Robot_good_part", "logging_sql":"false", "logging_influx": "true", "group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"2": [{"node": "ns=2;s=Buhler-OPC-D007.D007.APPL.en_entstd.svENdigitalOUT.scrap_spc", "dataType": "float", "name": "scrap_spc", "logging_sql":"false", "logging_influx": "true", "group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+      - '{"3": [{"node": "ns=2;s=Buhler-OPC-D007.D007.APPL.en_entstd.svENdigitalOUT.scrap_startup", "dataType": "float", "name": "scrap_startup", "logging_sql":"false", "logging_influx": "true", "group": "D007", "db": "mssql", "historian": "influx", "sqlSp": "sp_sql_logging"}]}'
+    subscribeEnabled: true
+    insecure: true
+pipeline:
+  processors:
+    - bloblang: |
+        root = meta("Message").parse_json()
+        root.timestamp_ms = (timestamp_unix_nano() / 1000000).floor()
+        root.group = meta("group")
+        root.db = meta("db")
+        root.historian = meta("historian")
+        root.sqlSp = meta("sqlSp")
+output:
+  broker:
+    pattern: fan_out
+    outputs:
+      - mqtt:
+          urls:
+            - tcp://10.0.0.56:1883
+          topic: UMH/V1/IMP/DCM/${! meta("group") }/subscription/${! meta("opcua_path") }
+          user: "user1"
+          password: "9jrKxe6u548LIKpl"
+          client_id: "imp-subscription"
+      - influxdb:
+          endpoint: http://10.2.0.6:8086
+          username: admin
+          password: admin123
+          token: BSNnByRccLkjEULGg1aA78tO0uGgwk2uJLz6EUlw1qh5uIFG9jmkDV8dW6tPQQExiVIITNDlpywJ8HoWEgLbuQ==
+          org: RCM
+          bucket: UMH_V1_IMP_DCM_subscription
+          precision: ns
